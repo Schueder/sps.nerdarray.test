@@ -8,6 +8,7 @@ category: Hilfreiches
 ---
 
 ##### Hier findest du hoffentlich hilfreiche Erleuterungen und links rund ums Thema Automatisierung.
+  <link rel="stylesheet" href="{{ pathPrefix }}assets/css/style.css" />
 
 <details close>
     <summary><b>DIN/EN Normen:  </b></summary>  
