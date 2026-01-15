@@ -1,0 +1,33 @@
+---
+layout: null
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>SPS nerdarray</title>
+    <link>https://deine-domain.de</link>
+    <description>Podcast rund um SPS, Automation und Nerd-Themen</description>
+    <language>de-de</language>
+    <itunes:author>Sven, Patrik, Du</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+
+    {% for episode in collections.episodes | reverse %}
+    <item>
+      <title>{{ episode.data.title }}</title>
+      <description>{{ episode.data.description | safe }}</description>
+      <enclosure url="{{ episode.data.audio }}" type="audio/mpeg" />
+      <guid>{{ episode.url }}</guid>
+      <pubDate>{{ episode.data.date | rfc2822 }}</pubDate>
+      {% if episode.data.duration %}
+      <itunes:duration>{{ episode.data.duration }}</itunes:duration>
+      {% endif %}
+      {% if episode.data.youtube %}
+      <itunes:summary>Video: {{ episode.data.youtube }}</itunes:summary>
+      {% endif %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

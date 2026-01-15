@@ -1,0 +1,14 @@
+{
+  "name": "sps-nerdarray",
+  "version": "1.0.0",
+  "description": "Podcast-Webseite für SPS nerdarray",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "deploy": "npm run build && git add _site && git commit -m 'Deploy Eleventy site' && git push"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "luxon": "^3.7.2"
+  }
+}

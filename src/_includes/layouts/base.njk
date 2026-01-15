@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPS Nerdarray | {{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+</head>
+<body>
+  {% include "partials/header.njk" %}
+  <main class="container">
+    {{ content | safe }}
+  </main>
+  <footer class="footer">
+    <p>© {{ "now" | date("yyyy") }} SPS Nerdarray</p>                                           
+  </footer>
+</body>
+</html>

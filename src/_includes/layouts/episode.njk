@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+---
+<article class="episode">
+
+  <h1>{{ title }}</h1>
+
+  <p class="meta">
+    <strong>Veröffentlicht:</strong>
+    {{ date | date("dd.MM.yyyy") }}
+  </p>
+
+  {% if audio %}
+  <section class="audio-player">
+    <h2>🎧 Audio</h2>
+    <audio controls preload="none">
+      <source src="{{ audio }}" type="audio/mpeg">
+      Dein Browser unterstützt keinen Audio-Player.
+    </audio>
+  </section>
+  {% endif %}
+
+  {% if youtube %}
+  <section class="video-player">
+    <h2>📺 Video</h2>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/{{ youtube }}"
+        title="YouTube Video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="shownotes">
+    <h2>📝 Shownotes</h2>
+    {{ content | safe }}
+  </section>
+
+</article>
