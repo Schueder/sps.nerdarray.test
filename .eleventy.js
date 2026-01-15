@@ -28,6 +28,7 @@ module.exports = function(eleventyConfig) {
       output: "_site",
       includes: "_includes"
     },
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
   };
