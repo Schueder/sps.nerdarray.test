@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toRFC2822();
   });
 
-  // 🔴 WICHTIG: URL-Filter
+  // WICHTIG: URL-Filter
   eleventyConfig.addFilter("url", function (url) {
     const prefix = process.env.ELEVENTY_PATH_PREFIX || "/";
     if (prefix === "/") {
@@ -30,4 +30,15 @@ module.exports = function(eleventyConfig) {
     }
     return prefix.replace(/\/$/, "") + url;
   });
+  
+  return {
+    dir: {
+      input: "src",
+      output: "_site",
+      includes: "_includes"
+    },
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk"
+  };
 }
