@@ -30,14 +30,13 @@ module.exports = function(eleventyConfig) {
     }
     return prefix.replace(/\/$/, "") + url;
   });
-  
+
   return {
     dir: {
       input: "src",
       output: "_site",
       includes: "_includes"
     },
-    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
   };
