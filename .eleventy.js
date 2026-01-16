@@ -1,4 +1,9 @@
 const { DateTime } = require("luxon");
+const pathPrefix =
+  process.env.ELEVENTY_PATH_PREFIX ||
+  (process.env.GITHUB_REPOSITORY
+    ? "/" + process.env.GITHUB_REPOSITORY.split("/")[1] + "/"
+    : "/");
 
 module.exports = function(eleventyConfig) {
   // Assets durchreichen
@@ -23,20 +28,21 @@ module.exports = function(eleventyConfig) {
   });
 
   // WICHTIG: URL-Filter
-  eleventyConfig.addFilter("url", function (url) {
-    const prefix = process.env.ELEVENTY_PATH_PREFIX || "/";
-    if (prefix === "/") {
+    eleventyConfig.addFilter("url", function (url) {
+    if (pathPrefix === "/") {
       return url;
     }
-    return prefix.replace(/\/$/, "") + url;
+    return pathPrefix.replace(/\/$/, "") + url;
   });
 
+  
   return {
     dir: {
       input: "src",
       output: "_site",
       includes: "_includes"
     },
+    pathPrefix: pathPrefix,
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
   };
