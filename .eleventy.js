@@ -9,27 +9,25 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/episodes/*.md");
   });
 
-  // Datum-Filter für Nunjucks
+    // Datum-Filter
   eleventyConfig.addFilter("date", (dateObj, format = "dd.MM.yyyy") => {
     if (!dateObj || dateObj == "now"){
       return DateTime.now().toFormat(format);
     }
-      return DateTime.fromJSDate(dateObj).toFormat(format);
+    return DateTime.fromJSDate(dateObj).toFormat(format);
   });
 
-  // RFC 2822 für RSS
+  // RFC 2822
   eleventyConfig.addFilter("rfc2822", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toRFC2822();
   });
 
-  return {
-    dir: {
-      input: "src",
-      output: "_site",
-      includes: "_includes"
-    },
-    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk"
-  };
-};
+  // 🔴 WICHTIG: URL-Filter
+  eleventyConfig.addFilter("url", function (url) {
+    const prefix = process.env.ELEVENTY_PATH_PREFIX || "/";
+    if (prefix === "/") {
+      return url;
+    }
+    return prefix.replace(/\/$/, "") + url;
+  });
+}
