@@ -7,7 +7,7 @@ description: Warum es diesen Podcast gibt
 
 🤔 **Warum eigentlich?** <br>
 Sven ist leidenschaftlicher Podcast-Hörer.
-Eines Tages, suchte er verzweifelt nach einem Podcast der sich mit dem Thema sps-programmierung iec 61131 etc. auseinander setzt. **Erfolglos**
+Eines Tages, suchte er verzweifelt nach einem Podcast der sich mit dem Thema sps-programmierung IEC61131 etc. auseinander setzt. **Erfolglos**
 
 Mitte 2021 Fragte er Patrick und Neels, ob sie nicht Lust hätten bei einen Podcast mit zu machen.
 Das war schnell beantwortet: **Die Geburt von sps-nerdarray**
