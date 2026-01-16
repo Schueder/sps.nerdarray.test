@@ -1,5 +1,4 @@
 .DS_Store
-/chatGbt.txt
-/chatGpt-rss-feed.txt
+/notes-and-archive/
 node_modules/
 /_site/

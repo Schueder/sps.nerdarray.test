@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: Alle Folgen
+title: Folgen
 permalink: /episodes/
 ---
 

@@ -1,0 +1,183 @@
+🎙️ Nächster Schritt: RSS-Feed mit Spotify & Apple Podcasts verbinden
+
+Ihr habt bereits:
+
+✅ funktionierende Eleventy-Seite
+
+✅ episodes/*.md
+
+✅ generierten feed.xml
+
+✅ Episoden liegen künftig auf eigenem Server
+
+➡️ Jetzt wird der Feed “eingereicht”
+
+1️⃣ Wichtigste Voraussetzung (Checkliste)
+
+Bevor du irgendwo klickst, MUSS dein RSS-Feed diese Punkte erfüllen:
+
+✅ Öffentliche URL
+https://schueder.github.io/sps.nerdarray.test/feed.xml
+
+
+🔹 muss direkt im Browser öffnen
+🔹 kein Login
+🔹 kein Redirect-Fehler
+
+✅ Jede Episode braucht im RSS:
+Feld	Pflicht
+<title>	✅
+<description>	✅
+<pubDate>	✅
+<enclosure url="..." type="audio/mpeg">	✅
+<guid>	✅
+
+Beispiel (aus eurem Feed):
+
+<enclosure
+  url="https://media.sps-nerdarray.de/folge-001.mp3"
+  length="12345678"
+  type="audio/mpeg"
+/>
+
+
+👉 Die MP3 muss öffentlich erreichbar sein
+
+✅ Korrekte Podcast-Meta-Daten (Feed-Kopf)
+
+Diese Felder sind extrem wichtig:
+
+<itunes:title>SPS Nerdarray</itunes:title>
+<itunes:author>SPS Nerdarray</itunes:author>
+<itunes:explicit>false</itunes:explicit>
+<itunes:category text="Technology">
+  <itunes:category text="Software"/>
+</itunes:category>
+<itunes:image href="https://.../podcast-cover.jpg"/>
+
+
+📌 Cover:
+
+JPG oder PNG
+
+3000×3000 px
+
+unter 500 KB
+
+RGB (kein CMYK!)
+
+2️⃣ Spotify for Podcasters (heißt jetzt „Spotify for Creators“)
+🔗 https://podcasters.spotify.com
+Ablauf:
+
+Login / Account erstellen
+
+„Add your podcast“
+
+RSS-Feed URL einfügen
+
+Spotify schickt Bestätigungscode per E-Mail
+
+Feed wird geprüft
+
+Fertig 🎉
+
+⏱️ Dauer:
+➡️ meist 5–30 Minuten
+
+3️⃣ Apple Podcasts Connect
+🔗 https://podcastsconnect.apple.com
+Ablauf:
+
+Apple-ID
+
+„Show hinzufügen“
+
+RSS-Feed einfügen
+
+Apple prüft automatisch
+
+Bei Fehlern → genaue Meldung
+
+Freigeben
+
+⏱️ Dauer:
+
+Prüfung: Minuten
+
+Sichtbar im Store: bis 24h
+
+4️⃣ Wichtig: Feed-URL NIE mehr ändern
+
+🚨 Extrem wichtig
+
+Sobald Spotify & Apple euren Feed kennen:
+
+❌ NICHT ändern:
+
+Feed-URL
+
+GUIDs der Episoden
+
+Dateinamen der MP3s
+
+✔️ OK:
+
+neue Episoden
+
+Beschreibung anpassen
+
+Website ändern
+
+5️⃣ Was passiert, wenn ihr neue Folgen veröffentlicht?
+
+Ganz automatisch:
+
+Neue episode-xyz.md
+
+Build läuft
+
+feed.xml wird neu generiert
+
+Spotify & Apple ziehen sich die Folge selbst
+
+⏱️:
+
+Spotify: oft < 1h
+
+Apple: 1–24h
+
+6️⃣ Typische Fehler (die wir vermeiden!)
+Fehler	Folge
+MP3 nicht öffentlich	Episode erscheint nicht
+falscher MIME-Type	Spotify lehnt ab
+Cover zu klein	Apple blockiert
+Feed nicht UTF-8	kryptische Fehler
+GUID ändert sich	Episode doppelt
+
+👉 Euer Setup mit Eleventy ist sehr sauber, das ist top.
+
+7️⃣ Optional, aber sehr empfehlenswert
+🔍 Feed validieren
+
+https://podba.se/validate/
+
+https://castfeedvalidator.com/
+
+➡️ sagt euch exakt, was fehlt
+
+🧭 Was wir als Nächstes machen können
+
+Wenn du willst, helfe ich dir jetzt bei:
+
+✅ perfektem RSS-Template für Eleventy
+
+🎨 Podcast-Cover (Apple-konform)
+
+🎧 Spotify / Apple Test-Episode
+
+📈 Tracking (Spotify Analytics / Apple Stats)
+
+🌍 Custom Domain + HTTPS für Media
+
+👉 Sag einfach, welchen Punkt wir zuerst angehen.
