@@ -28,8 +28,7 @@ jobs:
 
       - name: Build site
         run: npx @11ty/eleventy
-        env:
-          ELEVENTY_PATH_PREFIX: /REPO-NAME/
+
 
       - name: Disable Jekyll
         run: touch _site/.nojekyll
