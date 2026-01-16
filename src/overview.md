@@ -8,7 +8,7 @@ permalink: /episodes/
 {% for episode in collections.episodes | reverse %}
   <li>
     <h2>
-      <a href="{{ episode.url }}">
+      <a href="{{ episode.url  | url }}">
         {{ episode.data.title }}
       </a>
     </h2>

@@ -8,7 +8,7 @@ audio: "https://example.com/episode1.mp3"
 youtube: "S0U6to0_75A"
 tags:
   - SPS
-  - Automatisierung 
+  - Automatisierung
   - Technology
   - Programmierung
   - Automatisierungstechnik
