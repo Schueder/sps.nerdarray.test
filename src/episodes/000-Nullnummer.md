@@ -6,6 +6,7 @@ date: 2022-04-09
 duration: "00:16:52"
 audio: "https://example.com/episode1.mp3"
 youtube: "S0U6to0_75A"
+shownotes: "hallo welt"
 tags:
   - SPS
   - Automatisierung
