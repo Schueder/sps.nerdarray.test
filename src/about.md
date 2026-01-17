@@ -31,6 +31,7 @@ Und das durch <b>euch</b>!  </p>
         <p>Schon im Studium habe ich gemerkt, dass die Automatisierungstechnik mich mehr interessiert als die anderen Fachrichtungen. So befasste ich mich bei meinem Praxis-Semester sowie meine Diplomarbeit mit der Automatisierung im Schiffbau.</p>
         <p>Los gelassen hat mich das Thema bislang nicht, so dass ich seit dem Ende meiner Diplomarbeit in dieser Branche tätig bin.</p>
         <p>Mittlerweile gehören neben den IEC61131-3 Sprachen, auch python, c, javascript sowie die Entwicklung von datenbank basierten Scada-Systemen zu meinen Expertiesen.</p>
-        <p>Gerne teile ich im Podcast meine Erfahrung mit euch, und hoffe das Interesse um das Thema Automatiesierung bei dem ein oder anderem erwecken zu können. Solltet ihr mal fragen speziell an mich haben, erreicht ihr mich via mail unter [neels@nerdarray.de](mailto:neels@nerdarray.de)</p>
+        <p>Gerne teile ich im Podcast meine Erfahrung mit euch, und hoffe das Interesse um das Thema Automatiesierung bei dem ein oder anderem erwecken zu können. Solltet ihr mal fragen speziell an mich haben, erreicht ihr mich via mail unter </p>
+[neels@nerdarray.de](mailto:neels@nerdarray.de)
 </details>
 <p>
