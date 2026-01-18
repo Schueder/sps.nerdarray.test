@@ -1,11 +1,10 @@
----
+---.
 layout: layouts/episode.njk
 title: "NerdArray[0] Nullnummer"
 episode: 1
 date: 2022-04-09
 duration: "00:16:52"
 audio: audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-test: "http://212.227.174.32/static/audio/spsna000.mp3"
 youtube: "S0U6to0_75A"
 tags:
   - SPS
