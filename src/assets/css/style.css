@@ -123,6 +123,10 @@ p {
 /* =========================
    Episode Detailseite
    ========================= */
+.episode .description {
+  font-size: 0.9rem;
+}
+
 .episode .meta {
   font-size: 0.9rem;
   color: #94a3b8;

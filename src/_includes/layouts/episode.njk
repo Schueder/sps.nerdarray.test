@@ -38,9 +38,11 @@ layout: layouts/base.njk
   </section>
   {% endif %}
 
+  {% if content | safe %}
   <section class="shownotes">
     <h2>📝 Shownotes</h2>
     {{ content | safe }}
   </section>
+  {% endif %}
 
 </article>
