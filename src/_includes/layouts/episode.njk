@@ -9,6 +9,8 @@ layout: layouts/base.njk
     <strong>Veröffentlicht:</strong>
     {{ date | date("dd.MM.yyyy") }}
   </p>
+  <p class="description">
+  {{ description }}
 
   {% if audio %}
   <section class="audio-player">
