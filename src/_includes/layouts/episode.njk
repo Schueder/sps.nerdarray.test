@@ -10,7 +10,9 @@ layout: layouts/base.njk
     {{ date | date("dd.MM.yyyy") }}
   </p>
   <p class="description">
-  {{ description }}
+    <strong>Beschreibung:</strong>
+    {{ description }}
+  </p>
 
   {% if audio %}
   <section class="audio-player">
