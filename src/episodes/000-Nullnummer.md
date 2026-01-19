@@ -4,7 +4,7 @@ title: "NerdArray[0] Nullnummer"
 episode: 1
 date: 2022-04-09
 duration: "00:16:52"
-audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+audio: "https://schueder.github.io/sps.nerdarray.test/audio/000-nullnummer.mp3"
 youtube: "S0U6to0_75A"
 tags:
   - SPS
