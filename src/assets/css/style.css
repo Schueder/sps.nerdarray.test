@@ -65,6 +65,7 @@ header {
 
 .header-nav {
   font-size: 0.9rem;
+  text-align: right; /* oder left / center – wie du willst */
 }
 
 .header-nav a {
@@ -75,6 +76,7 @@ header {
 .header-nav a:hover {
   text-decoration: underline;
 }
+
 
 .header-right {
   display: flex;
