@@ -39,17 +39,17 @@ header {
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0.75rem 1rem;
 }
 
-.header-left-wrapper {
+.header-top {
   display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-left {
@@ -77,28 +77,6 @@ header {
   text-decoration: underline;
 }
 
-
-.header-right {
-  display: flex;
-  align-items: flex-start;
-}
-
-.header-icons {
-  display: flex;
-  gap: 0.6rem;
-}
-
-.header-icons svg {
-  width: 22px;
-  height: 22px;
-  fill: #0000Af; /* gleiche Farbe wie Überschrift */
-  transition: fill 0.2s ease, transform 0.2s ease;
-}
-
-.header-icons a:hover svg {
-  fill: #1db954; /* z.B. Spotify-Grün beim Hover */
-  transform: translateY(-2px);
-}
 
 /* =========================
    Typography
