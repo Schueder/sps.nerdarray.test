@@ -55,7 +55,7 @@ header {
   align-items: center;
 }
 .header-mid {
-  align-items: left;
+  text-align: left;
 }
 
 .header-logo {
@@ -108,7 +108,6 @@ h1, h2, h3 {
   margin-top: 2rem;
   color: #0000Af;
   font-family: "Ruda", sans-serif;
-  text-align: left;
 }
 
 h3{
