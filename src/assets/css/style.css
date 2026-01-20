@@ -46,6 +46,12 @@ header {
   padding: 0.75rem 1rem;
 }
 
+.header-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 .header-left {
   display: flex;
   align-items: center;
@@ -79,20 +85,19 @@ header a:hover {
   color: #2563eb;
 }
 
-nav {
-  padding: 1rem;
+.header-nav {
+  font-size: 0.9rem;
 }
 
-nav a {
-  color: #777777;
+.header-nav a {
   text-decoration: none;
-  margin-right: 1rem;
-  font-weight: 500;
+  color: #333;
 }
 
-nav a:hover {
+.header-nav a:hover {
   text-decoration: underline;
 }
+
 
 /* =========================
    Typography
