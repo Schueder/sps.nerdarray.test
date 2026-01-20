@@ -28,6 +28,8 @@ body {
    Header & Navigation
    ========================= */
 .site-header {
+  margin: 0;              /* überschreibt globales margin-top */
+  line-height: 1;
   position: sticky;
   top: 0;
   z-index: 1000;
