@@ -35,8 +35,12 @@ body {
   z-index: 1000;
   background: #fff;
   border-bottom: 3px solid #0000Af;
-}
 
+/*  background-image: url('/assets/background.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;}
+*/
 .header-container {
   display: flex;
   flex-direction: column;

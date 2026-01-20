@@ -34,7 +34,7 @@ Und das durch <b>euch</b>!  </p>
 
         <p>Gerne teile ich im Podcast meine Erfahrung mit euch, und hoffe das Interesse um das Thema Automatiesierung bei dem ein oder anderem erwecken zu können. Solltet ihr mal fragen speziell an mich haben, könnt ihr mir gerne ene [email](mailto:neels@nerdarray.de) zukommen lassen.</p>
 
-        <p>Wer Interesse an einer Vernetzung via [LinkedIn](https://www.linkedin.com/in/neels-schüder) haben sollte, kann mir gerne eine Anfrage schicken.<>
+        <p>Wer Interesse an einer Vernetzung via [LinkedIn](https://www.linkedin.com/in/neels-schüder) haben sollte, kann mir gerne eine Anfrage schicken.</p>
 	
 </details>
 <p>
