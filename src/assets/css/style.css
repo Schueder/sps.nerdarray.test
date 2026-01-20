@@ -54,6 +54,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.header-mid {
+  align-items: left;
+}
 
 .header-logo {
   height: 90px;
