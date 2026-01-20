@@ -1,38 +1,38 @@
-<header class="site-header">
-  <div style="display: flex; flex-direction: column; width: 100%;">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
 
-    <!-- ZEILE 1: Titel + Icons -->
-    <div style="display: flex; align-items: center; width: 100%;">
-      <h1 style="margin-left: 20px; margin-bottom: 25px;">sps-nerdarray</h1>
-      <div style="margin-left: auto; margin-top:30px; margin-right:30px;display: flex; gap: 12px;">
-        <a href="https://www.facebook.com/profile.php?id=100082499066145" target="_blank" aria-label="Facebook">
-          {% include "icons/facebook.svg" %}
-        </a>
-        <a href="https://www.linkedin.com/in/sps-nerdarray-2045b72ab" target="_blank" aria-label="LinkedIn">
-          {% include "icons/linkedin.svg" %}
-        </a>
-        <a href="https://open.spotify.com/show/7AcioaN1MO65zWvUKPryPG?si=4f666a924dfb4fc2" target="_blank" aria-label="Spotify">
-          {% include "icons/spotify.svg" %}
-        </a>
-        <a href="https://podcasts.apple.com/de/podcast/sps-nerdarray/id1608239478" target="_blank" aria-label="Apple Podcasts">
-          {% include "icons/apple-podcasts.svg" %}
-        </a>
+<header class="site-header">
+  <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+
+    <!-- LINKS: Titel & Untertitel -->
+    <div style="display: flex; align-items: center;">
+      <!-- <img src="/assets/logo.png" alt="SPS nerdarray Logo" height="90"> -->
+      <div style="margin-left: 20px;">
+        <h1 style="margin: 0;">sps-nerdarray</h1>
+        <span class="subtitle">Ein deutschsprachiger Podcast über SPS-Programmierung</span>
       </div>
     </div>
 
-    <!-- ZEILE 2: Subtitel + Navigation -->
-    <div style="display: flex; align-items: center; width: 100%;">
-      <a class="subtitle" style="margin-left: 20px;">
-        Ein deutschsprachiger Podcast über sps-prgrammierung
+    <!-- MITTE: Navigation -->
+    <nav style="margin-left: auto; margin-right: 30px;">
+      <a href="/">HOME | </a>
+      <a href="/episodes/">Folgen | </a>
+      <a href="/about/">Über uns | </a>
+      <a href="/Hilfreiches/">Hilfreiches | </a>
+    </nav>
+
+    <!-- RECHTS: Social Icons -->
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <a href="https://www.facebook.com/DEINPROFIL" aria-label="Facebook" target="_blank" rel="noopener">
+        {% include "icons/facebook.svg" %}
       </a>
-    </div>
-      <nav style="margin-left: auto; margin-right: 0px; text-align: right;">
-        <a href=  "{{ '/' | url }}">Startseite</a> |
-        <a href=  "{{ '/episodes/' | url }}">Folgen</a> |
-        <a href=  "{{ '/about/' | url }}">Über uns</a> |
-        <a href=  "{{ '/Hilfreiches/' | url }}">Hilfreiches</a>
-      </nav>
+      <a href="https://www.linkedin.com/company/DEINPROFIL" aria-label="LinkedIn" target="_blank" rel="noopener">
+        {% include "icons/linkedin.svg" %}
+      </a>
+      <a href="https://open.spotify.com/show/DEINPODCAST" aria-label="Spotify" target="_blank" rel="noopener">
+        {% include "icons/spotify.svg" %}
+      </a>
+      <a href="https://podcasts.apple.com/podcast/DEINPODCAST" aria-label="Apple Podcasts" target="_blank" rel="noopener">
+        {% include "icons/apple-podcasts.svg" %}
+      </a>
     </div>
 
   </div>
