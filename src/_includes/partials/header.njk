@@ -1,38 +1,41 @@
 
-<header class="site-header">
-  <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
 
-    <!-- LINKS: Titel & Untertitel -->
-    <div style="display: flex; align-items: center;">
-      <img src="/assets/logo.png" alt="SPS nerdarray Logo" height="90">
-      <div style="margin-left: 20px;">
-        <h1 style="margin: 0;">sps-nerdarray</h1>
-        <span class="subtitle">Ein deutschsprachiger Podcast über SPS-Programmierung</span>
-      </div>
+<header class="site-header">>
+  <div class="header-container">
+
+    <!-- LINKS: Titel -->
+    <img src="/assets/logo.png" alt="SPS nerdarray Logo" height="90">
+    <div class="header-left">
+      <h1>SPS nerdarray</h1>
     </div>
 
-    <!-- MITTE: Navigation -->
-    <nav style="margin-left: auto; margin-right: 30px;">
-      <a href="/">HOME | </a>
-      <a href="/episodes/">Folgen | </a>
-      <a href="/about/">Über uns | </a>
-      <a href="/Hilfreiches/">Hilfreiches | </a>
-    </nav>
+    <!-- RECHTS: Icons + Navigation -->
+    <div class="header-right">
 
-    <!-- RECHTS: Social Icons -->
-    <div style="display: flex; align-items: center; gap: 14px;">
-      <a href="https://www.facebook.com/DEINPROFIL" aria-label="Facebook" target="_blank" rel="noopener">
-        {% include "icons/facebook.svg" %}
-      </a>
-      <a href="https://www.linkedin.com/company/DEINPROFIL" aria-label="LinkedIn" target="_blank" rel="noopener">
-        {% include "icons/linkedin.svg" %}
-      </a>
-      <a href="https://open.spotify.com/show/DEINPODCAST" aria-label="Spotify" target="_blank" rel="noopener">
-        {% include "icons/spotify.svg" %}
-      </a>
-      <a href="https://podcasts.apple.com/podcast/DEINPODCAST" aria-label="Apple Podcasts" target="_blank" rel="noopener">
-        {% include "icons/apple-podcasts.svg" %}
-      </a>
+      <!-- Social Icons (oben) -->
+      <div class="header-icons">
+        <a href="https://www.facebook.com/DEINPROFIL" aria-label="Facebook" target="_blank" rel="noopener">
+          {% include "icons/facebook.svg" %}
+        </a>
+        <a href="https://www.linkedin.com/company/DEINPROFIL" aria-label="LinkedIn" target="_blank" rel="noopener">
+          {% include "icons/linkedin.svg" %}
+        </a>
+        <a href="https://open.spotify.com/show/DEINPODCAST" aria-label="Spotify" target="_blank" rel="noopener">
+          {% include "icons/spotify.svg" %}
+        </a>
+        <a href="https://podcasts.apple.com/podcast/DEINPODCAST" aria-label="Apple Podcasts" target="_blank" rel="noopener">
+          {% include "icons/apple-podcasts.svg" %}
+        </a>
+      </div>
+
+      <!-- Navigation (unten) -->
+      <nav class="header-nav">
+        <a href="/">HOME</a> |
+        <a href="/episodes/">Folgen</a> |
+        <a href="/about/">Über uns</a> |
+        <a href="/Hilfreiches/">Hilfreiches</a>
+      </nav>
+
     </div>
 
   </div>
