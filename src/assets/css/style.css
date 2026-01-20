@@ -47,37 +47,49 @@ body {
 }
 
 .header-top {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 2rem;
 }
 
 .header-left {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
 .header-logo {
-  height: 90px;
+  height: 110px;
   width: auto;
 }
 
 .header-mid {
-  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.5rem;
 }
 
 .header-mid h1 {
   margin: 0;
   color: #0000Af;
   font-family: "Ruda", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
 }
 
 .header-icons {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.75rem;
+  padding-top: 0.5rem;
 }
 
 .header-icons a {
@@ -98,19 +110,14 @@ body {
   fill: currentColor;
 }
 
-/* Untere Zeile */
-.header-bottom {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 0.25rem;
-}
-
 .header-nav {
   font-size: 0.95rem;
+  text-align: right;
 }
 
 .header-nav a {
-  color: #0000Af;
+  color: #444444;
+  font-weight: bold;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -118,6 +125,11 @@ body {
 .header-nav a:hover {
   color: #3333cf;
   text-decoration: underline;
+}
+
+/* Untere Zeile - wird nicht mehr benötigt */
+.header-bottom {
+  display: none;
 }
 
 /* =========================
@@ -249,7 +261,7 @@ p {
   }
   
   .header-mid h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   
   .header-icons {

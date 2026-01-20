@@ -7,36 +7,36 @@
       <!-- LINKS: Logo + Titel nebeneinander -->
       <div class="header-left">
         <img src="{{ '/assets/logo.png' | url }}" alt="SPS nerdarray Logo" class="header-logo">
-      </div>
-      <div class="header-mid">
-        <h1>SPS nerdarray</h1>
-      </div>
-      <!-- RECHTS: Social Icons -->
-      <div class="header-icons">
-        <a href="https://www.facebook.com/profile.php?id=100082499066145" aria-label="Facebook" target="_blank" rel="noopener">
-          {% include "icons/facebook.svg" %}
-        </a>
-        <a href="https://www.linkedin.com/in/sps-nerdarray-2045b72ab" aria-label="LinkedIn" target="_blank" rel="noopener">
-          {% include "icons/linkedin.svg" %}
-        </a>
-        <a href="https://open.spotify.com/show/7AcioaN1MO65zWvUKPryPG" aria-label="Spotify" target="_blank" rel="noopener">
-          {% include "icons/spotify.svg" %}
-        </a>
-        <a href="https://podcasts.apple.com/de/podcast/sps-nerdarray/id1608239478" aria-label="Apple Podcasts" target="_blank" rel="noopener">
-          {% include "icons/apple-podcasts.svg" %}
-        </a>
+        <div class="header-mid">
+          <h1>SPS nerdarray</h1>
+        </div>
       </div>
 
-    </div>
+      <!-- RECHTS: Social Icons UND Navigation -->
+      <div class="header-right">
+        <div class="header-icons">
+          <a href="https://www.facebook.com/profile.php?id=100082499066145" aria-label="Facebook" target="_blank" rel="noopener">
+            {% include "icons/facebook.svg" %}
+          </a>
+          <a href="https://www.linkedin.com/in/sps-nerdarray-2045b72ab" aria-label="LinkedIn" target="_blank" rel="noopener">
+            {% include "icons/linkedin.svg" %}
+          </a>
+          <a href="https://open.spotify.com/show/7AcioaN1MO65zWvUKPryPG" aria-label="Spotify" target="_blank" rel="noopener">
+            {% include "icons/spotify.svg" %}
+          </a>
+          <a href="https://podcasts.apple.com/de/podcast/sps-nerdarray/id1608239478" aria-label="Apple Podcasts" target="_blank" rel="noopener">
+            {% include "icons/apple-podcasts.svg" %}
+          </a>
+        </div>
+        <p>  </p>
+        <nav class="header-nav">
+          <a href="{{ '/' | url }}">Startseite</a> |
+          <a href="{{ '/episodes/' | url }}">Folgen</a> |
+          <a href="{{ '/about/' | url }}">Über uns</a> |
+          <a href="{{ '/Hilfreiches/' | url }}">Hilfreiches</a>
+        </nav>
+      </div>
 
-    <!-- UNTERE ZEILE -->
-    <div class="header-bottom">
-      <nav class="header-nav">
-        <a href="{{ '/' | url }}">Startseite</a> |
-        <a href="{{ '/episodes/' | url }}">Folgen</a> |
-        <a href="{{ '/about/' | url }}">Über uns</a> |
-        <a href="{{ '/Hilfreiches/' | url }}">Hilfreiches</a>
-      </nav>
     </div>
 
   </div>
