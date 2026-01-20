@@ -6,6 +6,12 @@
       <img src="{{ '/assets/logo.png' | url }}" alt="SPS nerdarray Logo" class="header-logo">
       <h1>SPS nerdarray</h1>
     </div>
+      <nav class="header-nav">
+        <a href="{{ '/' | url }}">Startseite</a> |
+        <a href="{{ '/episodes/' | url }}">Folgen</a> |
+        <a href="{{ '/about/' | url }}">Über uns</a> |
+        <a href="{{ '/Hilfreiches/' | url }}">Hilfreiches</a>
+      </nav>
 
     <!-- RECHTS: Icons + Navigation -->
     <div class="header-right">
@@ -24,15 +30,6 @@
           {% include "icons/apple-podcasts.svg" %}
         </a>
       </div>
-
-      <nav class="header-nav">
-        <a href="{{ '/' | url }}">Startseite</a> |
-        <a href="{{ '/episodes/' | url }}">Folgen</a> |
-        <a href="{{ '/about/' | url }}">Über uns</a> |
-        <a href="{{ '/Hilfreiches/' | url }}">Hilfreiches</a>
-      </nav>
-
     </div>
-
   </div>
 </header>
