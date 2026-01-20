@@ -37,10 +37,11 @@ body {
 header {
   border-bottom: 3px solid #0000Af;
 }
+
 .header-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.4rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0.75rem 1rem;
@@ -52,10 +53,9 @@ header {
   align-items: center;
 }
 
-.header-left {
+.header-bottom {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  justify-content: flex-end;
 }
 
 .header-logo {
@@ -65,7 +65,6 @@ header {
 
 .header-nav {
   font-size: 0.9rem;
-  text-align: right; /* oder left / center – wie du willst */
 }
 
 .header-nav a {
@@ -83,27 +82,28 @@ header {
   gap: 0.75rem;
 }
 
-/* Links (a) */
 .header-icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #0000Af;          /* Icon-Farbe */
-  text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
+  color: #0000Af;
 }
 
-/* SVGs selbst */
 .header-icons svg {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;     /* WICHTIG */
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
 }
 
 /* Hover */
 .header-icons a:hover {
   color: #60a5fa;
   transform: translateY(-2px);
+}
+
+.header-icons svg {
+  width: 26px;
+  height: 26px;
 }
 
 
