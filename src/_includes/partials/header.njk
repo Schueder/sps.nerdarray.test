@@ -1,18 +1,15 @@
-
-
-<header class="site-header">>
+<header class="site-header">
   <div class="header-container">
 
-    <!-- LINKS: Titel -->
-    <img src="{{ '/assets/logo.png' | url}}" alt="SPS nerdarray Logo" height="90">
+    <!-- LINKS: Logo + Titel -->
     <div class="header-left">
+      <img src="{{ '/assets/logo.png' | url }}" alt="SPS nerdarray Logo" class="header-logo">
       <h1>SPS nerdarray</h1>
     </div>
 
     <!-- RECHTS: Icons + Navigation -->
     <div class="header-right">
 
-      <!-- Social Icons (oben) -->
       <div class="header-icons">
         <a href="https://www.facebook.com/DEINPROFIL" aria-label="Facebook" target="_blank" rel="noopener">
           {% include "icons/facebook.svg" %}
@@ -28,7 +25,6 @@
         </a>
       </div>
 
-      <!-- Navigation (unten) -->
       <nav class="header-nav">
         <a href="/">HOME</a> |
         <a href="/episodes/">Folgen</a> |
