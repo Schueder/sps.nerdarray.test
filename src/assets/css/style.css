@@ -53,27 +53,9 @@ header {
   align-items: center;
 }
 
-.header-bottom {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .header-logo {
   height: 90px;
   width: auto;
-}
-
-.header-nav {
-  font-size: 0.9rem;
-}
-
-.header-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-.header-nav a:hover {
-  text-decoration: underline;
 }
 
 .header-icons {
@@ -95,15 +77,14 @@ header {
   fill: currentColor;
 }
 
-/* Hover */
-.header-icons a:hover {
-  color: #60a5fa;
-  transform: translateY(-2px);
+/* Untere Zeile */
+.header-bottom {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.header-icons svg {
-  width: 26px;
-  height: 26px;
+.header-nav {
+  font-size: 0.9rem;
 }
 
 
