@@ -14,7 +14,7 @@ Und das durch <b>euch</b>!  </p>
 * [linkedin](https://www.linkedin.com/in/sps-nerdarray-2045b72ab/)
 
 <p>Nun zu aber zu uns:</p>
-<img src="{{ '/assets/we.png' | url }}" alt="Das sind wir" class="header-logo">
+<img src="{{ '/assets/we.png' | url }}" alt="Das sind wir" class="about-img">
 <details close>
     <summary><b>Sven</b></summary>
         <p>Hey, ich bin Sven, und habe folgendes zu sagen.</p>

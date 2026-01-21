@@ -136,6 +136,11 @@ body {
   display: none;
 }
 
+.about-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 /* =========================
    Typography
    ========================= */
