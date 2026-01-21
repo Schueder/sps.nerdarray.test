@@ -35,7 +35,7 @@ body {
   z-index: 1000;
   background: #fff;
   border-bottom: 3px solid #0000Af;
-
+}
 /*  background-image: url('/assets/background.png');
   background-size: contain;
   background-position: center;
@@ -60,7 +60,7 @@ body {
 .header-left {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1,5rem;
 }
 
 .header-logo {
@@ -276,7 +276,7 @@ p {
   .header-icons {
     grid-column: 1 / -1;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1,5rem;
     padding-top: 0.5rem;
   }
   
