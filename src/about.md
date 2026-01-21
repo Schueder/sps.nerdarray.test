@@ -12,7 +12,9 @@ Und das durch <b>euch</b>!  </p>
 * [Mail](mailto:info@nerdarray.de)
 * [facebook](https://www.facebook.com/profile.php?id=100082499066145)
 * [linkedin](https://www.linkedin.com/in/sps-nerdarray-2045b72ab/)
-  
+
+<p>Nun zu aber zu uns:</p>
+<img src="{{ '/assets/we.png' | url }}" alt="Das sind wir" class="header-logo">
 <details close>
     <summary><b>Sven</b></summary>
         <p>Hey, ich bin Sven, und habe folgendes zu sagen.</p>
