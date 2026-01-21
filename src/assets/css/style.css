@@ -144,7 +144,13 @@ body {
 /* =========================
    Typography
    ========================= */
-   
+
+.header-subtitel{
+  font-size: 1em;
+  font-weight: bold;
+  color: #444444;
+}
+
 .subtitle {
   font-size: 1em;
   font-weight: bold;
